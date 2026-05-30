@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Student Form</h1>
+    <p id="description">Student Background</p>
+
+    <form id="survey-form">
+      
+      
+      <label id="name-label" for="name">Name:</label><br>
+      <input id="name" type="text" placeholder="Enter your name" required><br><br>
+
+      
+      <label id="email-label" for="email">Email:</label><br>
+      <input id="email" type="email" placeholder="Enter your email" required><br><br>
+
+      
+      <label id="number-label" for="number">Age:</label><br>
+      <input id="number" type="number" min="10" max="100" placeholder="Enter your age"><br><br>
+
+      
+      <label for="dropdown">Course:</label><br>
+      <select id="dropdown">
+        <option value="">Select course</option>
+        <option value="it">IT</option>
+        <option value="business">Business</option>
+      </select><br><br>
+
+      
+      <p>Are you a full-time student?</p>
+      <input type="radio" name="student" value="yes"> Yes<br>
+      <input type="radio" name="student" value="no"> No<br><br>
+
+      
+      <p>Skills:</p>
+      <input type="checkbox" value="coding"> Coding<br>
+      <input type="checkbox" value="design"> Design<br>
+      <input type="checkbox" value="communication"> Communication<br><br>
+
+      
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" placeholder="Write something..."></textarea><br><br>
+
+      
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
