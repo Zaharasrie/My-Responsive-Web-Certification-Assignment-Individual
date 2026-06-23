@@ -1,4 +1,4 @@
-/* --- GAYA ASAS & PEMILIH UMUM --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,18 +11,18 @@ html {
 }
 
 body {
-    background-color: #0f172a; /* Warna latar gelap modern */
+    background-color: #0f172a; 
     color: #f8fafc;
 }
 
-/* --- NAVIGATION BAR (#navbar) --- */
+
 #navbar {
-    position: fixed; /* Sentiasa melekat di bahagian atas viewport */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(15, 23, 42, 0.95);
-    border-bottom: 2px solid #38bdf8; /* Garisan neon biru */
+    border-bottom: 2px solid #38bdf8; 
     z-index: 1000;
 }
 
@@ -54,9 +54,9 @@ body {
     color: #38bdf8;
 }
 
-/* --- WELCOME SECTION (#welcome-section) --- */
+
 #welcome-section {
-    height: 100vh; /* Ketinggian menyamai penuh viewport */
+    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +78,7 @@ body {
     font-weight: 300;
 }
 
-/* --- PROJECTS SECTION (#project-section) --- */
+
 #project-section {
     padding: 100px 20px;
     max-width: 1200px;
@@ -96,7 +96,7 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 Lajur secara lalai */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 40px;
 }
 
@@ -130,7 +130,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* --- CONTACT SECTION --- */
+
 #contact-section {
     padding: 100px 20px;
     text-align: center;
@@ -162,7 +162,7 @@ body {
     background-color: #0ea5e9;
 }
 
-/* --- MEDIA QUERY (Untuk Responsif Peranti Mudah Alih) --- */
+
 @media (max-width: 768px) {
     #welcome-section h1 {
         font-size: 2.5rem;
@@ -172,7 +172,7 @@ body {
         font-size: 1.1rem;
     }
 
-    /* Tukar grid projek kepada 1 lajur sahaja pada skrin kecil */
+    
     .projects-grid {
         grid-template-columns: 1fr;
     }
