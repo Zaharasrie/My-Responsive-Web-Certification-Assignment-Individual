@@ -1,0 +1,181 @@
+/* --- GAYA ASAS & PEMILIH UMUM --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Warna latar gelap modern */
+    color: #f8fafc;
+}
+
+/* --- NAVIGATION BAR (#navbar) --- */
+#navbar {
+    position: fixed; /* Sentiasa melekat di bahagian atas viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 0.95);
+    border-bottom: 2px solid #38bdf8; /* Garisan neon biru */
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav-logo {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-links a {
+    color: #f8fafc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* --- WELCOME SECTION (#welcome-section) --- */
+#welcome-section {
+    height: 100vh; /* Ketinggian menyamai penuh viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+    text-align: center;
+    padding: 20px;
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #f8fafc;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+    color: #38bdf8;
+    font-weight: 300;
+}
+
+/* --- PROJECTS SECTION (#project-section) --- */
+#project-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #38bdf8;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Lajur secara lalai */
+    gap: 40px;
+}
+
+.project-tile {
+    display: block;
+    background-color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+}
+
+/* --- CONTACT SECTION --- */
+#contact-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #0b0f19;
+}
+
+#contact-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#contact-section p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+#profile-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#profile-link:hover {
+    background-color: #0ea5e9;
+}
+
+/* --- MEDIA QUERY (Untuk Responsif Peranti Mudah Alih) --- */
+@media (max-width: 768px) {
+    #welcome-section h1 {
+        font-size: 2.5rem;
+    }
+
+    #welcome-section p {
+        font-size: 1.1rem;
+    }
+
+    /* Tukar grid projek kepada 1 lajur sahaja pada skrin kecil */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-container {
+        flex-direction: column;
